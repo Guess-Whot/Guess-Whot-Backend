@@ -39,8 +39,11 @@ describe('User Testing', () => {
   it('returns the current user', async () => {
     const [agent, user] = await registerAndLogin();
     const res = await agent.get('/api/v1/users/me');
-    expect(res.status).toEqual(200);
-    console.log(res.body);
+    expect(res.body).toEqual({
+      ...user,
+      exp: expect.any(Number),
+      iat: expect.any(Number),
+    });
   });
   afterAll(() => {
     pool.end();
