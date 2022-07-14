@@ -13,4 +13,31 @@ CREATE TABLE characters (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name VARCHAR NOT NULL,
     image VARCHAR
-)
+);
+
+Insert Into characters (name, image) Values
+('Leela',''),
+('Bender',''),
+('Fry',''),
+('Zoidberg',''),
+('Professor Farnsworth',''),
+('Zapp Brannigan',''),
+('Kif Kroker',''),
+('Hermes Conrad',''),
+('Nibbler',''),
+('Mom',''),
+('The Robot Devil',''),
+('Morbo',''),
+('Scruffy',''),
+('Amy ',''),
+('Calculon',''),
+('Linda',''),
+('Richard Nixon',''),
+('Roberto',''),
+('Abner Doubledeal',''),
+('Hyper-Chicken',''),
+('Elzar',''),
+('Hypnotoad',''),
+('Officer Smitty',''),
+('Officer URL',''),
+('Tinny Tim','');
