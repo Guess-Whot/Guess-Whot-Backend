@@ -10,7 +10,8 @@ describe('backend character routes', () => {
 
   it('Get /characters displays all characters', async () => {
     const resp = await request(app).get('/api/v1/characters');
-    expect(resp.body.length).toEqual(25);
+
+    expect(resp.body.length).toEqual(24);
     expect(resp.body[0].name).toEqual('Leela');
   });
 
