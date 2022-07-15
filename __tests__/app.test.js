@@ -27,7 +27,6 @@ describe('User Testing', () => {
   });
   it('Creates a new User', async () => {
     const res = await request(app).post('/api/v1/users').send(mockUser);
-    // const { email } = mockUser;
     expect(res.status).toEqual(200);
 
     expect(res.body).toEqual({
