@@ -31,8 +31,7 @@ describe('User Testing', () => {
     expect(res.status).toEqual(200);
 
     expect(res.body).toEqual({
-      id: expect.any(String),
-      email,
+      message: 'Signed in successfully.',
     });
   });
 
