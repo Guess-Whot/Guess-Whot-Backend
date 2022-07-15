@@ -5,17 +5,17 @@ DROP TABLE IF EXISTS characters cascade;
 
 CREATE TABLE users (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  email VARCHAR NOT NULL UNIQUE,
+  email VARCHAR NOT NULL,
   password_hash VARCHAR NOT NULL
 );
 
 CREATE TABLE characters (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name VARCHAR NOT NULL,
-    image VARCHAR
+    url VARCHAR
 );
 
-Insert Into characters (name, image) Values
+Insert Into characters (name, url) Values
 ('Leela','https://i.imgur.com/rgLAr87.jpg'),
 ('Bender','https://i.imgur.com/XU4Njll.jpg'),
 ('Fry','https://i.imgur.com/dHaY0Zv.jpg'),
