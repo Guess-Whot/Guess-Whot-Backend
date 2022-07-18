@@ -34,7 +34,7 @@ Insert Into characters (name, url) Values
 ('Linda','https://i.imgur.com/zG6B3TS.jpg'),
 ('Roberto','https://i.imgur.com/mfDj2xy.jpg'),
 ('Hyper-Chicken','https://i.imgur.com/Smctl7c.jpg'),
-('Hypnotoad','https://i.imgur.com/SixpHUR.gifv'),
+('Hypnotoad','https://i.imgur.com/SixpHUR.gif'),
 ('Seymour','https://i.imgur.com/YfwBNF6.jpg'),
 ('Ndnd','https://i.imgur.com/6mEUDzR.jpg'),
 ('Lurrr','https://i.imgur.com/zy7eJd6.jpg'),
