@@ -43,6 +43,13 @@ describe('User Testing', () => {
       iat: expect.any(Number),
     });
   });
+
+  it('Should sign out user', async () => {
+    const [agent] = await registerAndLogin();
+    const resp = await agent.delete('/api/v1/users/sessions');
+    expect(resp.status).toBe(204);
+  });
+
   afterAll(() => {
     pool.end();
   });
